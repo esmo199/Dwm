@@ -1,20 +1,7 @@
-sudo pacman -S xorg xorg-xinit base-devel git 
-git clone https://aur.archlinux.org/yay.git
+pacman -S xorg-xinit xorg git
+cd /usr/src
 
-cd yay
+git clone git://git.suckless.org/dwm
+git clone git://git.suckless.org/st
+git clone git://git.suckless.org/dmenu
 
-makepkg -si
-
-    sudo pacman -S ttf-fira-code wqy-zenhei
-
-    yay -S ttf-symbola nerd-fonts-complete
-
-sudo pacman -S alacritty
-
-git clone https://git.suckless.org/dwm
-
-
-cd dwm
-vim ~/.xinitrc
-
-startx
